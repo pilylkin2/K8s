@@ -26,6 +26,7 @@ spec:
         ports:
         - containerPort: 5432
         volumeMounts:
+        - mountPath: /var/lib/postgresql/data
           subPath: pgdata  # Указываем подкаталог
           name: postgres-storage
       volumes:
